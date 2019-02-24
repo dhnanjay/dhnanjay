@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dhananjay Kumar</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/jquery.mobile.min.css">
+    <script src="js/jquery.mobile-1.4.2.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+   <!-- <script src="js/bundle.esm.js"></script>-->
+    <script type="module" src="https://sap.github.io/ui5-webcomponents/resources/sap/ui/webcomponents/main/bundle.esm.js"></script>
+    <script data-id="sap-ui-config" type="application/json">
+        {
+            "theme": "sap_belize",
+            "language": "EN",
+            "compactSize": true
+        }
+    </script>
+    <style>
+        sup {
+            color: #839198;
+        }
+        .small {
+            height: 100% !important;
+        }
+        .card-header {
+            padding: 0.25rem .75rem;
+            font-family: "72","72full",Arial,Helvetica,sans-serif;
+            font-weight: 400;
+            font-size: .865rem;
+        }
+        .card {
+            border: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+<div data-role="page" data-control-title="Home" id="page1" class="home">
+<ui5-shellbar
+        id="shellbar"
+        primary-title="Hi, I am Dhananjay Kumar"
+        secondary-title="personal website"
+        logo="https://media.licdn.com/dms/image/C5603AQH-K-pXcyWFdQ/profile-displayphoto-shrink_200_200/0?e=1556150400&v=beta&t=J54bqT2eYNRKyNJFqe4_5G7sanB9mtZJIpONwzVCWb0"
+        profile="css/man_avatar_5.png"
+>
+    <ui5-shellbar-item data-ui5-slot="items" id="call" src="sap-icon://email" text="Email To">
+        <a href="mailto:dkumar217@gmail.com">Send Email</a>
+    </ui5-shellbar-item>
+    <a href="mailto:dkumar217@gmail.com">Send Email</a>
+    <ui5-input data-ui5-slot="searchField"></ui5-input>
+</ui5-shellbar><br><br>
+    <div class="container">
+        <div class="container-fluid">
+            <div class="text-center">
+                <h4>Dhananjay Kumar</h4><br>
+                <p>
+                    I am a Data Scientist at Vitamin Shoppe. I enjoy finding needle <sup>(insights)</sup> in a
+                    haystack <sup>(heaps of data)</sup>. I have interest around Machine Learning, Deep Learning and Computer Vision.
+                    I am a polyglot programmer and have experience with programming languages such as Python, R, ABAP, C and Java, Javascript.
+                    And, I also designed this website.
+                </p>
+            </div><br><br>
+            <div class="row">
+                <div class="col">
+                    <ui5-card avatar="css/social.png" heading="Social" subtitle="" class="small">
+                     <!--   <div class="content content-padding">-->
+                           <div class="card">
+                               <div class="card-header">
+                                   Github
+                               </div>
+                               <div class="card-body">
+                                   <img src="css/github.png" alt="Github" height="65%" width="6%">
+                                   <ui5-link href="https://github.com/dhnanjay" target="h_blank">Github</ui5-link>
+                               </div>
+                           </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    Twitter
+                                </div>
+                                <div class="card-body">
+                                    <img src="css/twitter2.png" alt="Github" height="65%" width="6%">
+                                    <ui5-link href="https://github.com/dhnanjay" target="h_blank">@dhnanjay</ui5-link>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    LinkedIn
+                                </div>
+                                <div class="card-body">
+                                    <img src="css/linkedin.png" alt="Github" height="65%" width="7%">
+                                    <ui5-link href="https://github.com/dhnanjay" target="h_blank">LinkedIn</ui5-link>
+                                </div>
+                            </div>
+                   <!--     </div>-->
+                    </ui5-card>
+                </div>
+                <div class="col">
+                    <a href="resume.html" target="h_blank">
+                    <ui5-card avatar="css/resume2.png"
+                            heading="Resume"
+                            subtitle="Last updated on Jan, 15, 2019"
+                            class="small">
+                        <ui5-timeline>
+                            <ui5-timeline-item id="test-item" title-text="Vitamin Shoppe"  icon="sap-icon://offsite-work">
+                                <sup>Current Organization</sup>
+                            </ui5-timeline-item>
+                            <ui5-timeline-item title-text="MS - Data Science"  icon="sap-icon://education">
+                                <sup>Education</sup>
+                            </ui5-timeline-item>
+                            <ui5-timeline-item title-text="Experience"  icon="sap-icon://work-history">
+                                <sup>12+ years</sup>
+                            </ui5-timeline-item>
+                        </ui5-timeline>
+                    </ui5-card>
+                    </a>
+                </div>
+                <div class="col">
+                    <ui5-card avatar="css/degree.png" heading="Training & Certification" subtitle="" class="small">
+                        <ui5-timeline>
+                            <ui5-timeline-item title-text="Google Cloud Platform Big Data and Machine Learning Fundamentals"  icon="sap-icon://study-leave">
+                                <sup>Aug 2016 – Present License AUERNURRZTVD</sup><br>
+                                <ui5-link href="https://www.coursera.org/account/accomplishments/verify/AUERNURRZTVD" target="h_blank">certificate</ui5-link>
+                            </ui5-timeline-item>
+                            <ui5-timeline-item title-text="Deep Learning"  icon="sap-icon://e-learning">
+                                <sup>Aug 2018 – Present</sup><br>
+                                <ui5-link href="https://nycdatascience.com/certificates/dhanajay-kumar-certificate-of-completion/" target="h_blank">certificate</ui5-link>
+                            </ui5-timeline-item>
+                        </ui5-timeline>
+                    </ui5-card>
+                </div>
+
+            </div> <!-- row ends -->
+            <br>
+            <div class="row">
+                <div class="col">
+
+                    <a href="https://deeplearnings.blogspot.com/2019/02/running-jupyter-notebook-from-docker_10.html" target="h_blank">
+                    <ui5-card avatar="css/blog2.png"
+                            heading="Running Jupyter Notebook from Docker - Part 2" subtitle="Blog on Docker/Jupyter" status="3 of 3" class="small">
+                        <ui5-list separators="Inner" class="content-padding">
+                            <ui5-li icon="sap-icon://bullet-text">Create a Directory at an .. privileges</ui5-li>
+                            <ui5-li icon="sap-icon://bullet-text">Go inside the newly created Dir.</ui5-li>
+                            <ui5-li icon="sap-icon://bullet-text">Expose the port of Jupyter server to the host</ui5-li>
+                        </ui5-list>
+                    </ui5-card>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://deeplearnings.blogspot.com/2019/02/running-jupyter-notebook-from-docker.html" target="_blank">
+                        <ui5-card avatar="css/blog2.png"
+                                  heading="Running Jupyter Notebook from Docker - Part 1" subtitle="Blog on Docker/Jupyter" status="2 of 3" class="small">
+                            <ui5-list separators="Inner" class="content-padding">
+                                <ui5-li icon="sap-icon://bullet-text">Execute following cmd :</ui5-li>
+                                <ui5-li icon="sap-icon://bullet-text">Validate the executable python path </ui5-li>
+                                <ui5-li icon="sap-icon://bullet-text">Modify the .bashrc file </ui5-li>
+                            </ui5-list>
+                        </ui5-card>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://deeplearnings.blogspot.com/2019/02/docker-cheat-sheet.html" target="_blank">
+                        <ui5-card avatar="css/blog2.png"
+                                  heading="Docker Cheat Sheet" subtitle="Blog on Docker/Jupyter" status="1 of 3" class="small">
+                            <ui5-list separators="Inner" class="content-padding">
+                                <ui5-li icon="sap-icon://bullet-text">docker -v</ui5-li>
+                                <ui5-li icon="sap-icon://bullet-text">docker image ls -a </ui5-li>
+                                <ui5-li icon="sap-icon://bullet-text">docker pull image_name</ui5-li>
+                            </ui5-list>
+                        </ui5-card>
+                    </a>
+                </div>
+
+            </div> <!-- row ends -->
+            <br>
+            <div class="row">
+                <div class="col">
+                    <a href="https://github.com/ujjwalkarn/Machine-Learning-Tutorials" target="_blank">
+                        <ui5-card avatar="css/github2.png"
+                                  heading="Machine Learning & Deep Learning Tutorials" subtitle="Github Repository" class="small">
+                            <ui5-list separators="Inner" class="content-padding">
+                                <ui5-li icon="sap-icon://bullet-text">Machine Learning</ui5-li>
+                                <ui5-li icon="sap-icon://bullet-text">Deep Learning </ui5-li>
+                                <ui5-li icon="sap-icon://bullet-text">Artificial Intelligence</ui5-li>
+                            </ui5-list>
+                        </ui5-card>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://github.com/dhnanjay/mit-deep-learning-book-pdf" target="_blank">
+                        <ui5-card avatar="css/book4.png"
+                                  heading="Deep Learning Book" subtitle="An MIT Press Book" class="small">
+                            <div class="text-center">
+                                <img src="css/deeplearningbook.jpg" alt="Deep Learning Book" height="10%" width="30%">
+                            </div>
+                        </ui5-card>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://www.kdnuggets.com/2018/05/10-more-free-must-read-books-for-machine-learning-and-data-science.html" target="_blank">
+                        <ui5-card avatar="css/book4.png"
+                                  heading="10 Free Must-Read Books for ML & Data Science" subtitle="2018 KDnuggets Platinum Blog" class="small">
+                            <div class="text-center">
+                                <img src="https://preview.ibb.co/esSvQy/10_more_free_ml_ds_books.jpg" alt="The Data Science Handbook" height="55%" width="65%">
+                            </div>
+                        </ui5-card>
+                    </a>
+                </div>
+
+            </div> <!-- row ends -->
+
+        </div>
+    </div>
+</div> <!--Page1 Ends -->
+</body>
+</html>
